@@ -4,3 +4,5 @@ dependencies:
   - numpy
   - pandas
   - jupyter
+  - pip:
+    - bs4

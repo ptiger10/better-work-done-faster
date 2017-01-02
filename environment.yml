@@ -5,4 +5,4 @@ dependencies:
   - pandas
   - jupyter
   - pip:
-    - bs4
+    - requests

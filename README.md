@@ -1,17 +1,19 @@
 # better-work-done-faster
-A repository to help people learn Python so they can get better work done faster.
+A repository for illustrating how to use Python to get better work done faster.
 
-Python is a general purpose programming language. The purpose of these materials is to help you learn Python and apply it to improve your life.
+Python is a general purpose programming language. There are many great tutorials online for learning Python, including:
+- [Codecademy](https://www.codecademy.com/learn/python)
+- [Dataquest](https://www.dataquest.io)
+- [Google's Python Class](https://developers.google.com/edu/python/)
 
-The materials are organized around a learning philosophy that suits me, but may not be right for you. The philosophy is:
+This repo is not intended to be a tutorial. If you're looking for a course that first grounds you in fundamental concepts and methodologies, you are in the wrong place. This repo is intended to get you excited about the prospect of learning Python by giving concrete examples of how you can actually apply it to your life. It is targeted at business people and career switchers who have been hearing "learn to code" for years, but are still skeptical about how it will help them get more work done faster and don't have 10,000 hours to commit to mastering a new skill.
 
-- Engage your intrinsic motivation by showing how Python can help you get better work done faster.
-- Guide you in setting up an environment where you can test things rapidly and see the results for yourself.
-- Dive into the fundamentals of the language only as necessary to achieve specific goals.
+The basic philosophy behind these materials is:
 
-This philosophy stands in contrast to many tutorials about Python, which start with grounding the student in fundamental concepts and methodologies. While that is probably the best approach for learning a new language comprehensively, it requires a lot of time and patience, and many mid-career learners will lose interest before they ever see how Python can actually help them!
+- Show you how Python can help you get better work done faster, so that you are more intrinsically motivated to continue learning the language elsewhere.
+- Guide you in how to set up a local learning environment, so that you can start writing logic  and seeing it work on your behalf immediately.
 
-These materials reference Python 3.x. If you are trying to learn Python 2.x, I would recommend [Google's Python Class](https://developers.google.com/edu/python/).
+NB: These materials reference Python 3.x.
 
 ## What can I do with Python at work?
 ### Spreadsheets
@@ -30,26 +32,39 @@ And you need to make these modifications:
 - An additional column should tally the cumulative € that each harvester has earned that day.
 - A final column should calculate the collective time spent harvesting each item's Product Category on that day, across all harvesters.
 
-If you have ever worked with a spreadsheet, odds are that you have spent countless hours making changes just like these, over and over again. These mindless tasks sap your creative energy, distract you from more impactful analysis, and are difficult to troubleshoot if you encounter errors. Worst of all, when you download this file tomorrow, you have to make the same rote changes all over again.
+If you have ever worked with a spreadsheet, odds are that you have spent countless hours making changes just like these, over and over again. These mindless tasks sap your creative energy, distract you from more impactful analysis, and it is difficult for others to review or troubleshoot your modifications. Worst of all, when you download this file tomorrow, you have to make the same rote changes all over again.
 
 With Python, you can write a script that executes all these tasks for you in seconds! And the best part is, once you've written the script once, you can run it as many times as you want and it will always run the same way. Like they say in the old Ronco infomercials, you just ["Set It and Forget It!"](https://www.youtube.com/watch?v=tLq27iOW0R0)
 
-With just 20 lines of code, available [here](spreadsheet_transformation.ipynb), we can transform the spreadsheet to suit our purposes.
+With just 20 lines of code, available [here](code_samples/spreadsheet_transformation.ipynb), we can transform the spreadsheet to suit our purposes.
 
-Et voila! The spreadsheet is now ready for whatever needs to happen next, from sending it along as a report to running a more advanced analysis.
+Et voila! The spreadsheet is now ready for whatever needs to happen next, from sharing it as a report, to creating visualizations, to running more advanced analysis on top of it.
+
 ![End Table](resources/table2.png)
 
-### Web Data
+### Web Data, part 1
 If your work involves gathering data from the web, then Python can help you get better work done faster.
 
-Imagine you are an astronomer in Houston trying to check whether any human space activities are interfering with your celestial readings. Every day, you visit the [NASA website](https://www.nasa.gov/) to read the latest events, like the ones below:
+Imagine you are a Texas-based astronomer trying to check whether any human space activities are interfering with your celestial readings. Every day, you visit the [NASA website](https://www.nasa.gov/) to read the latest events, like the ones below:
 ![NASA Table](resources/nasa_table.png)
 
-One day, you realize that you don't actually care about seeing all of NASA's events, because reading through this list every day is burning valuable time. All you want is to be alerted whenever something is happening at the Johnson Space Center.
+One day, you realize that you don't actually care about seeing all of NASA's events, because reading through this list every day is burning valuable time. All you want is to be alerted whenever something is happening at the Johnson Space Center in Houston.
 
-With Python, you can write a script to read through text on the web *for you* and extract interesting bits.
+With Python, you can write a script to read through text on the web *for you*. With just 15 lines of code, available [here](code_samples/web_data.ipynb) Python can extract and deliver all the information you need.
 
+![NASA List](resources/nasa_eventlist.png)
+
+### Web Data, part 2
+Now imagine that you want to improve your celestial awareness further by tracking the location of the International Space Station overhead and the number of astronauts currently in space.
+
+Fortunately, the ISS maintains an **open API** ("application programming interface") where we can find this information quickly.
+
+If you are new to programming, API is a scary word. Everyone throws it around so casually, but what actually is it and how do you *use* one? In the context of web data, an API is nothing other than a specialized web server just waiting to return information, as long as you ask for it in the right way. APIs are hosted at **web endpoints** (e.g., http://api.open-notify.org/iss-now.json). Sometimes these function like typical websites (e.g., if you navigate to the above link, it will display the current ISS location information in a web browser). Sometimes they don't. Most web APIs are accompanied by **documentation** (e.g., [iss-now](http://open-notify.org/Open-Notify-API/ISS-Location-Now/)) that specify the required inputs and outputs. Many require you to register with the API provider first to obtain an **API key** or security token.
+
+ Python makes it easy to collect web data via API. With [this script](code_samples/web_data2), you can programmatically collect web data every day and add it to your existing collection, yielding a result like this:
+
+![NASA List](resources/iss_table.png)
 
 ### Conclusion
 
-These examples are just the tip of the iceberg for demonstrating the power and utility of Python at work. Since the purpose of these materials is to empower you to do these things and more on your own, it's almost time to dive into some of the fundamentals at play here. But first, let's configure your environment.
+These examples are just the tip of the iceberg for demonstrating the power and utility of Python at work. Now it's time to empower you to see these things in action yourself. To this end, let's configure your local environment for rapid Python learning.

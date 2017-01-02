@@ -48,7 +48,7 @@ If your work involves gathering data from the web, then Python can help you get 
 Imagine you are a Texas-based astronomer trying to check whether any human space activities are interfering with your celestial readings. Every day, you visit the [NASA website](https://www.nasa.gov/) to read the latest events, like the ones below:
 ![NASA Table](resources/nasa_table.png)
 
-One day, you realize that you don't actually care about seeing all of NASA's events, because reading through this list every day is burning valuable time. All you want is to be alerted whenever something is happening at the Johnson Space Center in Houston.
+One morning, you realize that you don't actually care about seeing all of NASA's events, because reading through this list is burning valuable time. All you want is to be alerted whenever something is happening at the Johnson Space Center in Houston.
 
 With Python, you can write a script to read through text on the web *for you*. With just 15 lines of code, available [here](code_samples/web_data.ipynb) Python can extract and deliver all the information you need.
 
@@ -61,10 +61,10 @@ Fortunately, the ISS maintains an **open API** ("application programming interfa
 
 If you are new to programming, API is a scary word. Everyone throws it around so casually, but what actually is it and how do you *use* one? In the context of web data, an API is nothing other than a specialized web server just waiting to return information, as long as you ask for it in the right way. APIs are hosted at **web endpoints** (e.g., http://api.open-notify.org/iss-now.json). Sometimes these function like typical websites (e.g., if you navigate to the above link, it will display the current ISS location information in a web browser). Sometimes they don't. Most web APIs are accompanied by **documentation** (e.g., [iss-now](http://open-notify.org/Open-Notify-API/ISS-Location-Now/)) that specify the required inputs and outputs. Many require you to register with the API provider first to obtain an **API key** or security token.
 
- Python makes it easy to collect web data via API. With [this script](code_samples/web_data2), you can programmatically collect web data every day and add it to your existing collection, yielding a result like this:
+ Python makes it easy to collect the web data via API (leaving aside the fact that the ISS moves at 28,000km/hr, so your daily observations are not worth much...). With [this script](code_samples/web_data2), you can programmatically collect the ISS's location every day and add it to your existing collection, yielding a result like this:
 
 ![NASA List](resources/iss_table.png)
 
 ### Conclusion
 
-These examples are just the tip of the iceberg for demonstrating the power and utility of Python at work. Now it's time to empower you to see these things in action yourself. To this end, let's configure your local environment for rapid Python learning.
+These examples are just the tip of the iceberg for demonstrating the power and utility of Python at work. Now it's time to empower you to see these things in action yourself. To this end, let's (configure your local environment for rapid Python learning)[FIRST_PROJECT.md].

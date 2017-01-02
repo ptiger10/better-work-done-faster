@@ -1,0 +1,6 @@
+name: better-work-done-faster
+dependencies:
+  - python=3.5
+  - numpy
+  - pandas
+  - jupyter

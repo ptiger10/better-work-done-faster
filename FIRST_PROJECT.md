@@ -72,7 +72,7 @@ Should you ever decide you want to reference one of the thousands of other avail
     conda env update
 
 ### Opening your first Jupyter notebook
-You may have noticed that the examples stored in this repository's code_samples file utilize a file extension called .ipynb. You are probably used to seeing file extensions like .txt (for text files) or .doc (for Word files), but not .ipynb. It stands for an IPython notebook file. An IPython notebook is a tool for interactive Python development that is more editable and user-friendly than a Terminal shell and provides more feedback than executing a .py file directly. IPython has rebranded the notebook initiative as Jupyter.
+You may have noticed that the examples stored in this repository's code_samples file utilize a file extension called .ipynb. You are probably used to seeing file extensions like .txt (for text files) or .doc (for Word files), but not .ipynb. It stands for an IPython notebook file. An IPython notebook is a tool for interactive Python development that is more editable and user-friendly than a Python shell and provides more feedback than executing a .py file directly. IPython has rebranded the notebook initiative as Jupyter.
 
 To launch a Jupyter notebook, navigate to your project directory and type:
 

@@ -4,18 +4,18 @@ In the previous [section](FIRST_PROJECT.md), you learned how to set up a local e
 To convert a Jupyter notebook into a Python script, follow these steps:
 - In the last line of the notebook, type out the following code snippet, but do not run the code:
 
-      #!jupyter nbconvert --to=python <Notebook_Name>.ipynb
+      #!jupyter nbconvert --to=python {Notebook_Name}.ipynb
 
 - Save your notebook (Command + S)
 - Delete the # at the front of the code snippet and execute the code.
 - Following these steps ensures that the nbconvert command will execute but will not be included in the script itself.
 - NB: For this to work, the notebook name cannot have any spaces.
 
-If the process was successful, you should now have a new file in your directory entitled <Notebook_Name>.py. To run this script, just enter the following instruction into Terminal:
+If the process was successful, you should now have a new file in your directory entitled {Notebook_Name}.py. To run this script, just enter the following instruction into Terminal:
 
-    python <Notebook_Name>.py
+    python {Notebook_Name}.py
 
-The Terminal will output any instances of print() contained in the script, and will also output any other consequences of the code. For example, if you include this code at the end of spreadsheet_transformation.py, it will download the revised spreadsheet to your directory as a .csv file:
+The Terminal shell will output any consequences of the code, such as printing any print(x) statements or creating new files. For example, if you include this code at the end of spreadsheet_transformation.py, it will download the revised spreadsheet to your directory as a .csv file:
 
     df.to_csv('revised_data.csv')
 

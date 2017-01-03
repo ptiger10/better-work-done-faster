@@ -65,6 +65,6 @@ If you are new to programming, API is a scary word. Everyone throws it around so
 
 ![NASA List](resources/iss_table.png)
 
-### Conclusion
+### Next steps
 
 These examples are just the tip of the iceberg for demonstrating the power and utility of Python at work. Now it's time to empower you to see these things in action yourself. To this end, let's [configure your local environment for rapid Python learning](FIRST_PROJECT.md).

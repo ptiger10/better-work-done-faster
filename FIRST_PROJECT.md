@@ -85,20 +85,14 @@ Built-in libraries, as well as the dependencies you defined in your environment.
     import pandas as pd
 
 ### Time to freestyle
- Try to replicate the examples in the code_samples folder. For the spreadsheet_transformation notebook to work, you  will need to download the sample dataset, available [here](https://github.com/ptiger10/better-work-done-faster/blob/master/resources/sample_data.csv). Take liberties and see where things break.
+ Try to replicate the examples in the code_samples folder. To execute a code block in Jupyter, type Shift + Enter.
+
+For the spreadsheet_transformation notebook to work, you  will need to download the sample dataset into your first_project directory, available [here](https://github.com/ptiger10/better-work-done-faster/blob/master/resources/sample_data.csv). Take liberties and see where things break.
 
 If you want to experiment with other operations, you can find how Pandas implements many common Excel functions [here](http://davefort.org/shortcut_directory.html). I also highly recommend [Chris Albon's blog](http://chrisalbon.com/), which illustrates how to execute many tasks in Python and Pandas.
 
 If you encounter an error, your first line of defense is to go to Google and try searching for the operation you are trying to execute, e.g., "how do I create a new column in Pandas."" Odds are you are not the first person to have had this question, and others in the open source community will often have volunteered an answer with a demonstration of exactly what code to use.
 
-### Conclusion
+### Next steps
 
-That's all, folks. Hopefully, going through this process has affirmed that 1) learning Python will help you get better work done faster, and 2) writing useful Python yourself is not some fantastical pipe dream, but something you can start *today*.
-
-With any luck it has also given you a clearer sense of your learning destination. Unless you have a tolerance for pain and deep reservoir of intrinsic motivation, your goal right now should *not* be to master the language. That would take 10,000 hours and is a recipe for a flamed-out new year's resolution! Your goal should be to become proficient enough in using the language to start getting better work done faster, and then to layer on enough understanding of fundamentals to resolve errors that pop up along the way. The Python community, especially answers on [StackOverflow](www.stackoverflow.com), are an invaluable resource on this front.
-
-As you get more advanced and ambitious, you will want to graduate from mimicry and hackery to real understanding. At that point, it will become more appropriate to dive into the weeds of the language so that you can avoid unnecessary errors and approach problems more strategically. Here again I recommend the myriad online Python tutorials.
-
-But after enough experimentation on your end, you might find that you don't *need* a tutorial, because you will have built up intuition about what works and what doesn't work; what is required in some situations but not others; the common conventions behind the language, etc. This intuition will empower you to reference the [core Python documentation](https://docs.python.org/3/) and library documentation (e.g., [Pandas](http://pandas.pydata.org/pandas-docs/stable/)) for yourself, which are the source from which all tutorials spring. They tend to be extremely detailed but utterly impenetrable to novices. Once you are at that point, you will start to reach escape learning velocity.
-
-Happy trails!
+Once you have figured out how to get useful code in a notebook, you're probably wondering "what do I do now?" It would not save you that much time if you needed to launch a local server every time you wanted to run code! The answer is saving your code as a Python script and executing the script directly in Terminal. The [next section](EXECUTING_SCRIPTS.md) shows you how to do this.

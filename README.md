@@ -61,7 +61,7 @@ Fortunately, the ISS maintains an **open API** ("application programming interfa
 
 If you are new to programming, API is a scary word. Everyone throws it around so casually, but what actually is it and how do you *use* one? In the context of web data, an API is nothing other than a specialized web server just waiting to return information, as long as you ask for it in the right way. APIs are hosted at web endpoints (e.g., http://api.open-notify.org/iss-now.json). Sometimes these function like typical websites (e.g., if you navigate to the above link, it will display the current ISS location information in a web browser). Sometimes they don't. Most web APIs are accompanied by documentation (e.g., [iss-now](http://open-notify.org/Open-Notify-API/ISS-Location-Now/)) that specify the required inputs and outputs. Many require you to register with the API provider first to obtain an API key or security token.
 
- Python makes it easy to collect the web data via API (leaving aside the fact that the ISS moves at 28,000km/hr, so your daily observations are not worth much...). With [this script](code_samples/web_data2), you can programmatically collect the ISS's location every day and add it to your existing collection, yielding a result like this:
+ Python makes it easy to collect the web data via API (leaving aside the fact that the ISS moves at 28,000km/hr, so your daily observations are not worth much...). With [this script](code_samples/web_data_2), you can programmatically collect the ISS's location every day and add it to your existing collection, yielding a result like this:
 
 ![NASA List](resources/iss_table.png)
 
